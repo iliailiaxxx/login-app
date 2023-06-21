@@ -67,15 +67,24 @@ passed data: bearer jwt
 
 
 All of endpoints supports DTO, with allowed data to pass
+
 Sequlize Mysql will migrate to db automatically
+
 project implements envConfig, equalize, auth based on JWT and guard that passes the role of the user to jwt payload
+
 Depending on roles users have differend priveleges and different dysplay of 
+
 Admin account will be created automatically with password what will be passed to dotenv
+
 User bacame boss automaticaly if he got subbordinates and and became back to user if he loses all subbordinates
+
 dotenv require to pass: port of project, db connection parameters, jwt secret and password of admin account
 
+
 clone repo - git clone https://github.com/iliailiaxxx/login-app.git
+
 install - npm install
+
 run - npm run start:dev
 
 
