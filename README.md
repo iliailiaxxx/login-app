@@ -66,19 +66,21 @@ passed data: bearer jwt
 ===============
 
 
-All of endpoints supports DTO, with allowed data to pass
+All of the endpoints support DTO, with allowed data to pass
 
 Sequlize Mysql will migrate to db automatically
 
-project implements envConfig, equalize, auth based on JWT and guard that passes the role of the user to jwt payload
+Project implements envConfig, equalize, auth based on JWT and guard that passes the role of the user to jwt payload
 
-Depending on roles users have differend priveleges and different dysplay of 
+Depending on roles users have different privileges and different displays of data
 
-Admin account will be created automatically with password what will be passed to dotenv
+Admin account will be created automatically with password that will be passed to dotenv
 
-User bacame boss automaticaly if he got subbordinates and and became back to user if he loses all subbordinates
+User became boss automatically if he got subordinates and became back to basic user if he loses all subordinates
 
-dotenv require to pass: port of project, db connection parameters, jwt secret and password of admin account
+All users are basic users on default
+
+dotenv require to pass: port of server, db connection parameters, jwt data and password of admin account
 
 
 clone repo - git clone https://github.com/iliailiaxxx/login-app.git
