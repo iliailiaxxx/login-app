@@ -29,6 +29,7 @@ Project uses 4 endpoints:
 ==============
 
 POST http://localhost:port/auth/register  -   register user
+
 passed data:
 {
     "username": string,
@@ -39,6 +40,7 @@ passed data:
 ===============
 
 POST http://localhost:port/auth/login  -   login user
+
 passed data:
 {
     "username" : string ,
@@ -48,16 +50,20 @@ passed data:
 ===============
 
 GET http://localhost:port/users
+
 passed data: bearer jwt
 
 ===============
 
 POST http://localhost:3000/users/change-supervisor  -   login user
+
 passed data: bearer jwt
 {
     "username" : string ,
     "supervisor":string
 }
+
+===============
 
 
 All of endpoints supports DTO, with allowed data to pass
