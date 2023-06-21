@@ -24,7 +24,57 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Project uses 4 endpoints:
+
+==============
+
+POST http://localhost:port/auth/register  -   register user
+passed data:
+{
+    "username": string,
+    "password": string,
+    "supervisor": string|null
+}
+
+===============
+
+POST http://localhost:port/auth/login  -   login user
+passed data:
+{
+    "username" : string ,
+    "password" : string
+}
+
+===============
+
+GET http://localhost:port/users
+passed data: bearer jwt
+
+===============
+
+POST http://localhost:3000/users/change-supervisor  -   login user
+passed data: bearer jwt
+{
+    "username" : string ,
+    "supervisor":string
+}
+
+
+All of endpoints supports DTO, with allowed data to pass
+Sequlize Mysql will migrate to db automatically
+project implements envConfig, equalize, auth based on JWT and guard that passes the role of the user to jwt payload
+Depending on roles users have differend priveleges and different dysplay of 
+Admin account will be created automatically with password what will be passed to dotenv
+User bacame boss automaticaly if he got subbordinates and and became back to user if he loses all subbordinates
+dotenv require to pass: port of project, db connection parameters, jwt secret and password of admin account
+
+clone repo - git clone https://github.com/iliailiaxxx/login-app.git
+install - npm install
+run - npm run start:dev
+
+
+
+
 
 ## Installation
 
